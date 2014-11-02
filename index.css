@@ -1,0 +1,89 @@
+/* -*- Mode: CSS -*- */
+/** 
+ * Style sheet for index.html
+ * 
+ * The CSS2 specification is available at
+ * http://www.w3.org/TR/1998/REC-CSS2-19980512
+ */
+@import url("./base.css");
+
+/** body
+ */
+body
+{
+	text-align: center;
+	background-color: white;
+}
+h1
+{
+}
+h2
+{
+}
+h3
+{
+	font: 106% georgia, times, "times new roman", sans-serif;
+	font-weight: bold;
+	margin-top: 0;
+}
+ul
+{
+	list-style-type: none;
+}
+/** Descendant selectors, class selectors and ID selectors */
+
+/** container
+ */
+div#container
+{
+	margin: 0;
+	padding: 0;
+	min-width: 800px;
+	min-height: 400px;
+	/*background-color: #0F0;*/
+}
+div#toppane
+{
+	text-align: left;
+	/*height: 36px;*/
+	font: 90% times, "times new roman", sans-serif;
+}
+img#logol
+{
+	width: 234px;
+	height: 30px;
+}
+
+div#centerpane
+{
+	clear: both;
+	text-align: left;
+	padding: 0em 1em;
+
+	/*background: #CCC url('image/bkgnd.png');
+	background-repeat: repeat-x;*/
+
+	/*min-height: 250px;*/
+	/*border: 2px solid white;*/
+}
+div#menupane
+{
+	clear: both;
+	text-align: left;
+	padding: 0em 1em;
+}
+div#menupane td
+{
+	text-align: center;
+	width: 120px;
+}
+img.menuimg
+{
+	width: 100px;
+	height: 100px;
+}
+
+div#menupane dl
+{
+	margin-left: 1em;
+}

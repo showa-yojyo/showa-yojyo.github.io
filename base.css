@@ -1,0 +1,145 @@
+/* -*- Mode: CSS -*- */
+/*
+ *
+ * The CSS2 specification is available at
+ * http://www.w3.org/TR/1998/REC-CSS2-19980512
+ */
+@import url("./link.css");
+
+body{
+	line-height: 1.4;
+	color: black;
+	background-color: white;
+}
+pre, tt
+{
+	font-size: 10pt;
+	font-family: "courier new", monospace;
+}
+pre.CCode{
+	padding: .5em;
+	line-height: 1.2;
+
+	color: black;  /* explicitly set bkgnd color */
+	background-color: whitesmoke;  /* explicitly set bkgnd color */
+}
+
+img
+{
+	margin: 0;
+	padding: 0;
+	border: 0 solid black;
+}
+img.snapshot{
+	border: 2px solid black;
+	padding: 0px;
+}
+
+hr
+{
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	border-color: darkgrey;
+	height: 1px;
+}
+
+table.lighttable
+{
+	border: 1px solid black;
+	border-collapse: collapse;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+table.lighttable thead,
+table.lighttable tbody th
+{
+	border: 1px solid black;
+	background-color: dimgrey;
+	color: white;
+}
+table.lighttable tbody th
+{
+	vertical-align: top;
+}
+table.lighttable thead th
+{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+table.lighttable td
+{
+	border: 1px solid black;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+div.toc
+{
+	margin: 0em 2em;
+}
+/* IE8 ‘Î‰ž */
+div.toc dl
+{
+	margin: 0em auto; /* TR.BL */
+}
+
+div#footer
+{
+	clear: both;
+	text-align: left;
+	font: 90% times, "times new roman", sans-serif;
+	padding: 4px 0px 0px 0px;
+	margin-top: 1px;
+	border-top: 1px solid darkgrey;
+}
+div#footer_logo
+{
+	float: left;
+	text-align: center;
+	width: 100px;
+	height: 40px;
+	margin: 0;
+	padding: 0px;
+}
+div#footer_copyright
+{
+	float: left;
+	text-align: left;
+	font-size: small;
+	padding: 0em 1em 0em 1em;
+}
+div#footer_spacer
+{
+	float: right;
+	color: lightgrey;
+	text-align: right;
+	font-size: small;
+}
+
+div.crumb
+{
+	clear: both;
+	text-align: left;
+	margin: 0;
+	font-size: small;
+	color: grey;
+}
+div.crumb_footer
+{
+	border-width: 1px 0px 0px 0px;
+	border-style: solid;
+	border-color: darkgrey;
+
+	clear: both;
+	padding: 0.5em;
+	text-align: left;
+	font-size: small;
+	color: grey;
+}
+
+.beta
+{
+	display: none;
+}
+
+q:lang(ja) { quotes: '<' '>' }
