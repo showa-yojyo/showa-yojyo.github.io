@@ -72,18 +72,7 @@ table.lighttable td
 	padding-left: 16px;
 	padding-right: 16px;
 }
-
-div.toc
-{
-	margin: 0em 2em;
-}
-/* IE8 ‘Î‰ž */
-div.toc dl
-{
-	margin: 0em auto; /* TR.BL */
-}
-
-div#footer
+footer
 {
 	clear: both;
 	text-align: left;
@@ -92,7 +81,7 @@ div#footer
 	margin-top: 1px;
 	border-top: 1px solid darkgrey;
 }
-div#footer_logo
+section#footer_logo
 {
 	float: left;
 	text-align: center;
@@ -101,45 +90,12 @@ div#footer_logo
 	margin: 0;
 	padding: 0px;
 }
-div#footer_copyright
+section#footer_copyright
 {
 	float: left;
 	text-align: left;
 	font-size: small;
 	padding: 0em 1em 0em 1em;
-}
-div#footer_spacer
-{
-	float: right;
-	color: lightgrey;
-	text-align: right;
-	font-size: small;
-}
-
-div.crumb
-{
-	clear: both;
-	text-align: left;
-	margin: 0;
-	font-size: small;
-	color: grey;
-}
-div.crumb_footer
-{
-	border-width: 1px 0px 0px 0px;
-	border-style: solid;
-	border-color: darkgrey;
-
-	clear: both;
-	padding: 0.5em;
-	text-align: left;
-	font-size: small;
-	color: grey;
-}
-
-.beta
-{
-	display: none;
 }
 
 q:lang(ja) { quotes: '<' '>' }
