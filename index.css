@@ -1,54 +1,63 @@
 /* -*- Mode: CSS -*- */
 /**
  * Style sheet for index.html
- *
- * The CSS2 specification is available at
- * http://www.w3.org/TR/1998/REC-CSS2-19980512
  */
 @import url("./base.css");
 
-/** body
- */
 body
 {
-	text-align: center;
 	background-color: white;
 }
-ul
-{
-	list-style-type: none;
-}
+
 /** Descendant selectors, class selectors and ID selectors */
 
-/** container
- */
-section#container
+#container
 {
 	margin: 0;
 	padding: 0;
 	min-width: 800px;
 	min-height: 400px;
 	/*background-color: #0F0;*/
-}
-section#toppane
-{
+	clear: both;
 	text-align: left;
-	/*height: 36px;*/
-	font: 90% times, "times new roman", sans-serif;
+	padding: 0em 1em;
 }
+#toppane
+{
+	text-align: center;
+}
+#toppane *:hover,
+#footer_logo *:hover
+{
+	background-color: transparent;
+	text-decoration: none;
+}
+
 img#logol
 {
 	width: 468px;
 	height: 60px;
 }
 
-section#menupane
+#container dl
 {
-	clear: both;
-	text-align: left;
-	padding: 0em 1em;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 1em;
+	margin-inline-end: 0px;
 }
-section#menupane dl
+#container dl > dt,
+#container dl > dd
 {
-	margin-left: 1em;
+	padding-bottom: 1.2em;
+}
+#container dl > dt
+{
+	float: left;
+	clear: left;
+}
+#container dl > dd
+{
+	margin-left: 7em;
 }
