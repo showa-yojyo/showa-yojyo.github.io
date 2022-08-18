@@ -3,16 +3,15 @@
  * Link styles
  */
 
-a:link, a:visited
-{
-	text-decoration: none;
-	font-weight: bold;
-	color: deeppink;
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: deeppink;
 }
-a:link:hover, a:visited:hover
-{
-	text-decoration: none;
-	font-weight: bold;
-	background-color: pink;
-	color: deeppink;
+a:visited {
+    filter: brightness(50%);
+}
+a:hover {
+    text-decoration: none;
+    background-color: pink;
 }
