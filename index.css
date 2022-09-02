@@ -2,62 +2,70 @@
 /**
  * Style sheet for index.html
  */
-@import url("./base.css");
+@import url("./normalize.css");
+@import url("./link.css");
 
-body
-{
-	background-color: white;
-}
+/* General rules. */
 
-/** Descendant selectors, class selectors and ID selectors */
-
-#container
-{
-	margin: 0;
-	padding: 0;
-	min-width: 800px;
-	min-height: 400px;
-	/*background-color: #0F0;*/
-	clear: both;
-	text-align: left;
-	padding: 0em 1em;
-}
-#toppane
-{
-	text-align: center;
-}
-#toppane *:hover,
-#footer_logo *:hover
-{
-	background-color: transparent;
-	text-decoration: none;
+body {
+    background-color: white;
+    color: black;
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-img#logol
-{
-	width: 468px;
-	height: 60px;
+img {
+    max-width: 100%;
 }
 
-#container dl
-{
-	display: block;
-	margin-block-start: 1em;
-	margin-block-end: 1em;
-	margin-inline-start: 1em;
-	margin-inline-end: 0px;
+/* Header rules. Put the banner image in center. */
+
+header {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
 }
-#container dl > dt,
-#container dl > dd
-{
-	padding-bottom: 1.2em;
+
+/* Main rules */
+
+main dl {
+    margin: 0em 1em;
 }
-#container dl > dt
-{
-	float: left;
-	clear: left;
+
+main dl>dd {
+    margin: 1em 2em;
 }
-#container dl > dd
-{
-	margin-left: 7em;
+
+/* Footer rules */
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+footer {
+    border-top: 1px solid grey;
+    color: black;
+    font: 0.9em times, "times new roman", sans-serif;
+    padding: 10px 0px;
+}
+
+footer ul,
+footer ol {
+    list-style-type: none;
+}
+
+footer ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer_copyright {
+    flex: 1 auto;
 }
