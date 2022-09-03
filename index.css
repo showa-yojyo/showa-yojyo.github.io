@@ -24,17 +24,16 @@ header {
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 10px 0px;
 }
 
 /* Main rules */
 
-main dl {
-    margin: 0em 1em;
+main {
+    padding: 0em 1em;
 }
 
 main dl>dd {
-    margin: 1em 2em;
+    margin: 0em 0em 1em 1em;
 }
 
 /* Footer rules */
