@@ -4,6 +4,11 @@
  * <https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links>
  */
 
+:root {
+    --main-link-color: deeppink;
+    --main-link-bg-color: pink;
+}
+
 a {
     outline: none;
     text-decoration: none;
@@ -11,7 +16,7 @@ a {
 }
 
 a:link {
-    color: deeppink;
+    color: var(--main-link-color);
 }
 
 a:visited {
@@ -19,17 +24,17 @@ a:visited {
 }
 
 a:focus {
-    background-color: pink;
+    background-color: var(--main-link-bg-color);
     border-bottom: 1px solid;
 }
 
 a:hover {
-    background-color: pink;
+    background-color: var(--main-link-bg-color);
     border-bottom: 1px solid;
 }
 
 a:active {
-    background: deeppink;
+    background: var(--main-link-color);
     color: white;
 }
 
