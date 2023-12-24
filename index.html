@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" itemscope itemtype="https://schema.org/WebSite">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="showa_yojyo@hotmail.com">
-  <meta name="description" content="プレハブ小屋ページ総合案内">
+  <meta itemprop="description" name="description" content="プレハブ小屋ページ総合案内">
   <meta property="og:description" content="プレハブ小屋ページ総合案内">
-  <meta property="og:title" content="プレハブ小屋" />
+  <meta itemprop="name" property="og:title" content="プレハブ小屋" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://showa-yojyo.github.io/index.html" />
-  <meta property="og:image" content="https://showa-yojyo.github.io/image/ogp-image.png" />
+  <meta itemprop="image" property="og:image" content="https://showa-yojyo.github.io/image/ogp-image.png" />
   <meta property="og:image:alt" content="プレハブ小屋" />
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:description" content="プレハブ小屋ページ総合案内">
@@ -72,10 +71,13 @@
             alt="logotype"></a>
       </li>
       <li id="footer_copyright">
-        Since <time>1999</time><br>
-        &copy; <time>1999</time>-<time>2023</time>
-        プレハブ小屋
-        All rights reserved.
+        Since <time itemprop="copyrightYear">1999</time><br>
+        <span itemprop="copyrightNotice">&copy; <time>1999</time>-<time>2023</time>
+        <span itemprop="accountablePerson author copyrightHolder editor maintainer publisher" itemscope itemtype="https://schema.org/Person">
+          <link itemprop="email" href="mailto:yojyo@hotmail.com"/>
+          <span itemprop="name">プレハブ小屋</span>
+        </span>
+        All rights reserved.</span>
       </li>
     </ul>
   </footer>
