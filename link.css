@@ -23,11 +23,7 @@ a:visited {
     filter: brightness(2%);
 }
 
-a:focus {
-    background-color: var(--main-link-bg-color);
-    border-bottom: 1px solid;
-}
-
+a:focus,
 a:hover {
     background-color: var(--main-link-bg-color);
     border-bottom: 1px solid;
